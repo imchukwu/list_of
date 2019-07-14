@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+{% block content %}
+
+	{% for school in schools %}
+		<article class="media content-section">
+		  <div class="media-body">
+		    <div class="article-metadata">
+		      <a class="mr-2" href="#">{{ school.state }}</a>
+		      <small class="text-muted">{{ school.school_type }}</small>
+		    </div>
+		    <h2><a class="article-title" href="#">{{ school.name }}</a></h2>
+		    <p class="article-content">{{ school.description }}</p>
+		  </div>
+		</article>
+	{% endfor %}
+{%endblock content %}
