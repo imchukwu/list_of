@@ -14,7 +14,7 @@ logger = logging.getLogger()
 
 app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///schools.sqlite3'
-app.config['SECRET_KEY'] = '6956ef6ac895fac965e941548ced2b8e'
+app.config['SECRET_KEY'] = 'secret key'
 
 db = SQLAlchemy(app)
 
